@@ -1,2 +1,134 @@
-h1
-	color green
+@import "normalize.styl"
+@import "fonts.styl"
+
+// VARIABLES
+gris_oscuro = #333333
+gris_claro = #818181
+rojo = #BD255B
+// VARIABLES
+
+// GENERALES
+body
+	font-family 'Varela Round', sans-serif
+	font-size 16px 	
+figure
+	margin 0
+a
+	text-decoration none
+	color gris_oscuro
+img
+	vertical-align top
+// GENERALES
+
+// BOTONES
+.button-menu
+	left .5em
+	margin-top -10px
+	position absolute
+	top 50%
+// BOTONES
+
+// OOCSS CLASES
+.container
+	font-size 0 //esto elimina el espacio entre elementos inline-block
+	padding 1.4rem
+	text-align center
+.action
+	color white
+	font-size 1.2em
+	margin-right .5em
+	&:last-child
+		margin-right 0em
+	&.gray
+		color gris_claro
+.actions
+	background rgba(black,.3)
+	bottom 0
+	left 0
+	position absolute
+	right 0
+	// cuando el position es absoluto y se pone left y right en 0, expande la caja lo cual ahorra el width:100%
+.border-bottom
+	border-bottom 1px solid gris_claro
+.name
+	color gris_oscuro
+.menu
+	display none
+.relative
+	position relative
+.author
+	color gris_claro
+.center-block
+	margin-right auto
+	margin-left auto
+.center-text
+	text-align center
+.right-text
+	text-align right
+.padding
+	padding 1em
+.padding-tb
+	padding 1em 0
+.progress
+	margin 1em 0
+	position relative 
+	.min, .max
+		font-size .8em
+		position absolute
+		top -5px
+	.min
+		left 0
+	.max 
+		right 0
+	.total
+		background gris_claro
+		border-radius 5px
+		height 5px
+		margin-left auto
+		margin-right auto
+		width 75%
+		.state
+			background rojo
+			border-radius 5px
+			height 5px
+			position relative
+			width 30%
+			.circle
+				background gris_oscuro
+				border-radius 50%
+				height 10px
+				position absolute
+				right 0
+				top -2px
+				width 10px
+// OOCSS CLASES
+
+//  
+.header
+	height 3.5em
+	
+	.title
+		font-size 1.1em
+		line-height 3.5em
+		margin 0
+		text-align center
+	
+.song
+	display inline-block
+	font-size 1rem
+	margin-bottom 1em
+	margin-right 1em
+	text-align left
+	width 8rem
+	
+	&:nth-child(even)// even busca a los pares
+		margin-right 0
+		
+	p 
+		margin .5em 0
+	
+.playing
+	&.small
+		width 20em
+		
+
