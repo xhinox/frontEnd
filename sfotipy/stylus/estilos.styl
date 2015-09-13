@@ -4,8 +4,7 @@
 // VARIABLES
 gris_oscuro = #333333
 gris_claro = #818181
-gris_mas_claro = #F0F0F0
-rojo = #BD255B
+rojo = #DB255B
 // VARIABLES
 
 // GENERALES
@@ -14,117 +13,58 @@ body
 	font-size 16px 	
 figure
 	margin 0
-a
-	text-decoration none
 img
 	vertical-align top
-ul
-	margin 0
-	padding 0
+a
+	text-decoration none
 // GENERALES
 
-// BOTONES
-.button-menu
-	left .5em
-	margin-top -10px
-	position absolute
-	top 50%
-// BOTONES
-
 // OOCSS CLASES
-.container
-	font-size 0 //esto elimina el espacio entre elementos inline-block
-	padding 1.4rem
-	text-align center
 .action
 	color white
 	font-size 1.2em
 	margin-right .5em
 	&:last-child
-		margin-right 0em
+		margin-right 0
 	&.gray
 		color gris_claro
 .actions
-	background rgba(black,.3)
+	background rgba(black, .3)
 	bottom 0
 	left 0
 	position absolute
 	right 0
-	// cuando el position es absoluto y se pone left y right en 0, expande la caja lo cual ahorra el width:100%
-.border-bottom
-	border-bottom 1px solid gris_claro
-.name
-	color gris_oscuro
-.menu
-	display none
-.relative
-	position relative
 .author
 	color gris_claro
+.border-bottom
+	border-bottom 1px solid gris_claro
+.button-menu
+	color gris_oscuro
+	left .5em
+	margin-top -10px
+	position absolute
+	top 50%
 .center-block
 	margin-right auto
 	margin-left auto
 .center-text
 	text-align center
-.right-text
-	text-align right
+.container
+	font-size 0
+	padding 1.4rem
+	text-align center
+.menu
+	display none
+.name
+	color gris_oscuro
 .padding
 	padding 1em
 .padding-tb
 	padding 1em 0
-.progress
-	margin 1em 0
-	position relative 
-	.min, .max
-		font-size .8em
-		position absolute
-		top -5px
-	.min
-		left 0
-	.max 
-		right 0
-	.total
-		background gris_claro
-		border-radius 5px
-		height 5px
-		margin-left auto
-		margin-right auto
-		width 75%
-		.state
-			background rojo
-			border-radius 5px
-			height 5px
-			position relative
-			width 30%
-			.circle
-				background gris_oscuro
-				border-radius 50%
-				height 10px
-				position absolute
-				right 0
-				top -2px
-				width 10px
-.left
-	float left
-.right
-	float right
-.wrap
-	width 1000px
-.round
-	border-radius 50%
-	overflow hidden
-// OOCSS CLASES
-
-//  
-.header
-	height 3.5em
-	
-	.title
-		font-size 1.1em
-		line-height 3.5em
-		margin 0
-		text-align center
-	
+.right-text
+	text-align right
+.relative
+	position relative
 .song
 	display inline-block
 	font-size 1rem
@@ -133,89 +73,57 @@ ul
 	text-align left
 	width 8rem
 	
-	&:nth-child(even)// even busca a los pares
-		margin-right 0
-		
-	p 
+	&:nth-child(even)
+		margin-right 0em
+	p
 		margin .5em 0
-	
+
+
+//GENERALES
+.header
+	height 3.5em
+	.title
+		font-size 1.1em
+		line-height 3.5em
+		margin 0
+		text-align center
 .playing
 	&.small
-		width 20em
-
-.input
-	border 1px solid gris_claro
-	height 2.5em
-	border-radius 5px
-	padding 0 1em 0 2em
-.search-icon
-	position absolute
-	left .5em
-	top .8em
-	color gris_claro
-.close-icon
-	position absolute
-	right .5em
-	top .5em
-	color gris_claro
-	font-size 1.2em
+		width 20rem
 		
-@media screen and (min-width:480px)
-	.song
-		&:nth-child(even)
-			margin-right 1em
-	.image
-		img
-			width 100%
-			height auto
-	.playing
-		&.medium
-			width auto //resetea el valor de los anchos lo que indica el display
-
-@media screen and (min-width:1000px)
-	body
-		background gris_mas_claro
-	.button-menu
-		display none
-	.menu
-		display block
-		background gris_mas_claro
-		overflow hidden
-		.item
-			float left
-			list-style none
-			a
-				color gris_oscuro
-				cursor pointer
-				display block
-				padding 1em
-				text-transform uppercase
-				border 5px solid transparent
-				&:hover
-					border-top 5px solid gris_claro
-	.header
-		height auto
-		.title
-			display none
-	.isotipo
-		width 122px
-	.logo
-		overflow hidden
-		padding 1.3em 0
-		background white
-	.avatar
-		height 38px
-		width 38px
-	.username
-		color gris_claro
-		margin-left .5em
+.progress
+	margin 1em 0
+	position relative
+	.min
+	.max
+		font-size .8em
+		position absolute
+		top -5px
+	.min
+		left 0
+	.max
+		right 0
+	.total
+		background gris_claro
+		border-radius 5px
+		height 5px
+		width 75%
+		margin-right auto
+		margin-left auto
+	.state
+		background rojo
+		border-radius 5px
+		height 5px
+		width 30%
 		position relative
-		top 9px
-		&:after
-			border-left 7px solid transparent
-			border-right 7px solid transparent
-			border-top 10px solid gris_claro
-			content ""
-			display inline-block
-			margin-left .4em
+		
+	.circle
+		background gris_oscuro
+		border-radius 50%
+		height 10px
+		position absolute
+		right 0
+		top -2px
+		width 10px
+
 	

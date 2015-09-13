@@ -257,26 +257,11 @@ body {
 figure {
   margin: 0;
 }
-a {
-  text-decoration: none;
-}
 img {
   vertical-align: top;
 }
-ul {
-  margin: 0;
-  padding: 0;
-}
-.button-menu {
-  left: 0.5em;
-  margin-top: -10px;
-  position: absolute;
-  top: 50%;
-}
-.container {
-  font-size: 0;
-  padding: 1.4rem;
-  text-align: center;
+a {
+  text-decoration: none;
 }
 .action {
   color: #fff;
@@ -284,7 +269,7 @@ ul {
   margin-right: 0.5em;
 }
 .action:last-child {
-  margin-right: 0em;
+  margin-right: 0;
 }
 .action.gray {
   color: #818181;
@@ -296,20 +281,18 @@ ul {
   position: absolute;
   right: 0;
 }
+.author {
+  color: #818181;
+}
 .border-bottom {
   border-bottom: 1px solid #818181;
 }
-.name {
+.button-menu {
   color: #333;
-}
-.menu {
-  display: none;
-}
-.relative {
-  position: relative;
-}
-.author {
-  color: #818181;
+  left: 0.5em;
+  margin-top: -10px;
+  position: absolute;
+  top: 50%;
 }
 .center-block {
   margin-right: auto;
@@ -318,14 +301,54 @@ ul {
 .center-text {
   text-align: center;
 }
-.right-text {
-  text-align: right;
+.container {
+  font-size: 0;
+  padding: 1.4rem;
+  text-align: center;
+}
+.menu {
+  display: none;
+}
+.name {
+  color: #333;
 }
 .padding {
   padding: 1em;
 }
 .padding-tb {
   padding: 1em 0;
+}
+.right-text {
+  text-align: right;
+}
+.relative {
+  position: relative;
+}
+.song {
+  display: inline-block;
+  font-size: 1rem;
+  margin-bottom: 1em;
+  margin-right: 1em;
+  text-align: left;
+  width: 8rem;
+}
+.song:nth-child(even) {
+  margin-right: 0em;
+}
+.song p {
+  margin: 0.5em 0;
+}
+.header {
+  height: 3.5em;
+}
+.header .title {
+  font-size: 1.1em;
+  line-height: 3.5em;
+  margin: 0;
+  text-align: center;
+}
+.playing.small {
+  width: 20rem;
 }
 .progress {
   margin: 1em 0;
@@ -347,18 +370,18 @@ ul {
   background: #818181;
   border-radius: 5px;
   height: 5px;
-  margin-left: auto;
-  margin-right: auto;
   width: 75%;
+  margin-right: auto;
+  margin-left: auto;
 }
-.progress .total .state {
-  background: #bd255b;
+.progress .state {
+  background: #db255b;
   border-radius: 5px;
   height: 5px;
-  position: relative;
   width: 30%;
+  position: relative;
 }
-.progress .total .state .circle {
+.progress .circle {
   background: #333;
   border-radius: 50%;
   height: 10px;
@@ -366,134 +389,4 @@ ul {
   right: 0;
   top: -2px;
   width: 10px;
-}
-.left {
-  float: left;
-}
-.right {
-  float: right;
-}
-.wrap {
-  width: 1000px;
-}
-.round {
-  border-radius: 50%;
-  overflow: hidden;
-}
-.header {
-  height: 3.5em;
-}
-.header .title {
-  font-size: 1.1em;
-  line-height: 3.5em;
-  margin: 0;
-  text-align: center;
-}
-.song {
-  display: inline-block;
-  font-size: 1rem;
-  margin-bottom: 1em;
-  margin-right: 1em;
-  text-align: left;
-  width: 8rem;
-}
-.song:nth-child(even) {
-  margin-right: 0;
-}
-.song p {
-  margin: 0.5em 0;
-}
-.playing.small {
-  width: 20em;
-}
-.input {
-  border: 1px solid #818181;
-  height: 2.5em;
-  border-radius: 5px;
-  padding: 0 1em 0 2em;
-}
-.search-icon {
-  position: absolute;
-  left: 0.5em;
-  top: 0.8em;
-  color: #818181;
-}
-.close-icon {
-  position: absolute;
-  right: 0.5em;
-  top: 0.5em;
-  color: #818181;
-  font-size: 1.2em;
-}
-@media screen and (min-width: 480px) {
-  .song:nth-child(even) {
-    margin-right: 1em;
-  }
-  .image img {
-    width: 100%;
-    height: auto;
-  }
-  .playing.medium {
-    width: auto;
-  }
-}
-@media screen and (min-width: 1000px) {
-  body {
-    background: #f0f0f0;
-  }
-  .button-menu {
-    display: none;
-  }
-  .menu {
-    display: block;
-    background: #f0f0f0;
-    overflow: hidden;
-  }
-  .menu .item {
-    float: left;
-    list-style: none;
-  }
-  .menu .item a {
-    color: #333;
-    cursor: pointer;
-    display: block;
-    padding: 1em;
-    text-transform: uppercase;
-    border: 5px solid transparent;
-  }
-  .menu .item a:hover {
-    border-top: 5px solid #818181;
-  }
-  .header {
-    height: auto;
-  }
-  .header .title {
-    display: none;
-  }
-  .isotipo {
-    width: 122px;
-  }
-  .logo {
-    overflow: hidden;
-    padding: 1.3em 0;
-    background: #fff;
-  }
-  .avatar {
-    height: 38px;
-    width: 38px;
-  }
-  .username {
-    color: #818181;
-    margin-left: 0.5em;
-    position: relative;
-    top: 9px;
-  }
-  .username:after {
-    border-left: 7px solid transparent;
-    border-right: 7px solid transparent;
-    border-top: 10px solid #818181;
-    content: "";
-    display: inline-block;
-    margin-left: 0.4em;
-  }
 }
